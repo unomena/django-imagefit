@@ -1,10 +1,10 @@
-from django.conf.urls import url, patterns
+from django.conf.urls import patterns, url
 
+from imagefit import views
 
-urlpatterns = patterns(
-    '',
-    url(
-        r'^(?P<path_name>[\w_-]*)/(?P<format>[,\w-]+)/(?P<url>.*)/?$',
-        'imagefit.views.resize',
-        name="imagefit_resize"),
-)
+urlpatterns = [
+    url(r'^(?P<path_name>[\w_-]*)/(?P<format>[,\w-]+)/(?P<url>.*)/?$',
+        views.resize,
+        name='imagefit_resize'
+        ),
+]
