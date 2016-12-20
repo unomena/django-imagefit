@@ -7,7 +7,6 @@ setup(
     name='django-imagefit',
     version='0.4.4',
     description='Render an optimized version of your original image on display. Ability to resize and crop.',
-    long_description=open('README.md').read(),
     author='Vincent Agnano',
     author_email='vincent.agnano@scopyleft.fr',
     url='http://github.com/vinyll/django-imagefit',
